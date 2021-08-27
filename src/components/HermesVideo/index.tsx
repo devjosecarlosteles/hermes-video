@@ -16,6 +16,10 @@ function VideoContainer ({ src }: VideoContainer) {
     setShowContextMenu(true)
   }
 
+  function handleMouseMove() {
+    alert("salve")
+  }
+
   useEffect(() => {
     window.addEventListener("click", () => {
       setShowContextMenu(false)
@@ -27,7 +31,8 @@ function VideoContainer ({ src }: VideoContainer) {
       <video 
         src={ src } 
         controls={ false }
-        onContextMenu={(e) => handleContextMenu(e)}
+        onContextMenu={ (e) => handleContextMenu(e) }
+        onMouseMove={ (e) => handleMouseMove() }
       ></video>
       {
         showContextMenu ? (
