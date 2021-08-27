@@ -30,13 +30,14 @@ export const Container = styled.div`
   }
 
   #timeline_container {
-    width: 200px;
-    height: 10px;
+    width: 92%;
+    height: 3px;
 
-    background-color: red;
+    background-color: #FFF;
 
     position: absolute;
 
-    bottom: 0;
+    bottom: 20px;
+    left: 20px;
   }
 `
