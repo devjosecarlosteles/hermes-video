@@ -9,6 +9,7 @@ interface VideoContainer {
 
 function VideoContainer ({ src }: VideoContainer) {
   const [ showContextMenu, setShowContextMenu ] = useState(false)
+  const [ showControls, setShowControls ] = useState(false)
 
   function handleContextMenu(e: any) {
     e.preventDefault() // block opening context menu
@@ -17,7 +18,7 @@ function VideoContainer ({ src }: VideoContainer) {
   }
 
   function handleMouseMove() {
-    alert("salve")
+    setShowControls(true)
   }
 
   useEffect(() => {
@@ -34,11 +35,6 @@ function VideoContainer ({ src }: VideoContainer) {
         onContextMenu={ (e) => handleContextMenu(e) }
         onMouseMove={ (e) => handleMouseMove() }
       ></video>
-      {
-        showContextMenu ? (
-          "salve"
-        ) : null
-      }
     </Container>
   )
 }
