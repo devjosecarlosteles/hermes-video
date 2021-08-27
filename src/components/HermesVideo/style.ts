@@ -18,17 +18,6 @@ export const Container = styled.div`
     left: 0;
   }
 
-  #controls {
-    position: absolute;
-    
-    top: 40px;
-    left: 10px;
-
-    .control {
-      cursor: pointer;
-    }
-  }
-
   #timeline_container {
     width: 92%;
     height: 3px;
@@ -37,7 +26,18 @@ export const Container = styled.div`
 
     position: absolute;
 
-    bottom: 20px;
+    bottom: 40px;
     left: 20px;
+  }
+
+  #controls {
+    position: absolute;
+    
+    bottom: 2px;
+    left: 20px;
+
+    .control {
+      cursor: pointer;
+    }
   }
 `
