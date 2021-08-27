@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { VideoContainer } from "./components/HermesVideo"
+import video from "./assets/example.mp4"
 
 function App() {
   return (
     <div className="App">
-      
+      <VideoContainer src={ video } />
     </div>
   );
 }
